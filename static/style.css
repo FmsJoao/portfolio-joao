@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+html,
+body {
+    font-family: Hubballi, Regular 400;
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #1a1e21;
+    overflow-y: auto;
+    width: 400px;
+    padding: 0 15px;
+    z-index: 9996;
+    transition: all ease-in-out 0.5s;
+}
+
+#header .profile img {
+    margin: 60px auto;
+    display: block;
+    width: 200px;
+    border: 6px solid #0a53be;
+    border-radius: 50%;
+}
+
+#header .profile h1 {
+    font-size: 24px;
+    color: #0a53be;
+    margin-top: -50px;
+    padding: 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+#header .profile .social-links a {
+    font-size: 1rem;
+    color: #FFFFFF;
+    background: #1a1e21;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+#header .profile .social-links a:hover {
+    background: #ffc107;
+}
+
+.nav-menu {
+    padding: 1.5rem
+}
+.nav-menu a,
+.nav-menu a:focus {
+    display: flex;
+    align-items: center;
+    color: #a52834;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.nav-menu a i,
+.nav-menu a:focus i {
+    font-size: 24px;
+    padding-right: 0.8rem;
+    color: #ffc107;
+}
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover > a i {
+    color: #cff4fc;
+}
+
+#main {
+    margin-left: 400px;
+}
+section#home {
+    background-image: url("./images/hp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+section#home h2 {
+    font-size: 6rem;
+}
+section#home span#subtitle {
+    margin-right: 8rem;
+    font-size: 1.5rem;
+}
+.text-shadow {
+    text-shadow: 4px 4px 10px #000000;
+}
+section#home div#scroll {
+    width: 9rem;
+}
+section#home div#scroll a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+i.menu-mobile {
+    position: fixed;
+    color: #FFFFFF;
+    background-color: #000C10;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.menu-nav-active {
+    overflow: hidden;
+}
+.menu-nav-active #header {
+    left: 0;
+}
+@media (max-width: 1024px) {
+    #header {
+        left: -400px;
+    }
+    i.menu-mobile {
+        display: flex;
+    }
+    section#home h2 {
+        font-size: 3.5rem;
+    }
+    section#home span#subtitle {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+    #main {
+        margin-left: 0;
+    }
+}
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  width: 12px;
+  box-shadow: inset 0 0 .3rem #00000050;
+  background-color: #fff ;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #020D17;
+}
+#footer {
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    z-index: 9999;
+    background-color: #a52834;
+    transition: 0.3s;
+}
+@media (max-width: 1012px) {
+    #footer {
+        position: static;
+        width: auto;
+        padding: 20px 15px;
+    }
+}
+
+
+
